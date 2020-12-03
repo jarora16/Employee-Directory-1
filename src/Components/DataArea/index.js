@@ -74,15 +74,19 @@ return b[heading]-  a[heading];
         filteredUsers: filteredList });
       };
 
-      useEffect(() => {
-        API.getUsers().then(results => {
-          setDeveloperState({
-            ...developerState,
-            users: results.data.results,
-            filteredUsers: results.data.results
+        var apifunction = () => {
+          API.getUsers().then(results => {
+            setDeveloperState({
+              ...developerState,
+              users: results.data.results,
+              filteredUsers: results.data.results
+            });
           });
-        });
-      }, [developerState]);
+      };
+
+      useEffect(() => {
+        return apifunction();
+      }, );
     
       return (
         <DataAreaContext.Provider
