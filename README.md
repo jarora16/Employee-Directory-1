@@ -1,24 +1,34 @@
-# Unit 19 React Homework: Employee Directory
+# Unit 18 PWA Homework: Online/Offline Budget Trackers
 
-## Overview
+Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
 
-For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
+The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+
+Offline Functionality:
+
+  * Enter deposits offline
+
+  * Enter expenses offline
+
+When brought back online:
+
+  * Offline entries should be added to tracker.
 
 ## User Story
-
-* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+AS AN avid traveller
+I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
+SO THAT my account balance is accurate when I am traveling
 
 ## Business Context
 
-An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+
 
 ## Acceptance Criteria
+GIVEN a user is on Budget App without an internet connection
+WHEN the user inputs a withdrawal or deposit
+THEN that will be shown on the page, and added to their transaction history when their connection is back online.
 
-Given a table of random users, when the user loads the page, a table of employees should render. 
+- - -
 
-The user should be able to:
-
-  * Sort the table by at least one category
-
-  * Filter the users by at least one property.
 
